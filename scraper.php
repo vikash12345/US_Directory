@@ -9,7 +9,7 @@ $NewLink	=	'http://globalcontact.com/gc/directory/search.php?table=USDIR';
 $html 		= file_get_html($NewLink);
 $var = 'Hello';
 $input =  $html->find('input[type=text]', 0);
-
+echo $input
      
     //code
 
