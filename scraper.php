@@ -25,7 +25,7 @@ echo $int = filter_var($str, FILTER_SANITIZE_NUMBER_INT);
         /*  $str = 'In My Cart : 11 12 items';
     preg_match_all('!\d+!', $str, $matches);
       echo $matches;
-      
+      */
       
       //		echo		$checkloopnumberforpagintion	=	str_replace("<a href='search.php?table=USDIR&amp;company=", "", $lastpageno);
 
