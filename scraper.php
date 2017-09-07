@@ -4,7 +4,8 @@
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 $Baselink = 'http://globalcontact.com/gc/directory/search.php?table=USDIR&company=a&search=&search_sic=&page=';
-for($var = 1; $var <= 4747; $var++){
+//4747
+for($var = 1; $var <= 2; $var++){
 $NEWLINK =$Baselink . $var;
 $html 		= file_get_html($NEWLINK);
 if($html)
