@@ -18,7 +18,9 @@ if($html)
      $lastpageno =  $html->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/center/div/a[11]", 0)->href;
     if(is_object($lastpageno))
     {
-      			echo		$checkloopnumberforpagintion	=	str_replace("search.php?table=USDIR&company=", "", $lastpageno);
+      
+      echo $lastpageno;
+      	//		echo		$checkloopnumberforpagintion	=	str_replace("search.php?table=USDIR&company=", "", $lastpageno);
 
       
     }
