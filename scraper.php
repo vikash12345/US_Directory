@@ -11,7 +11,9 @@ $html 		= file_get_html($NEWLINK);
 if($html)
       {
           foreach($html->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]")as $element);
-          $linksofpage = $element->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/div[1]/table/tbody/tr[3]/td/div/table/tbody/tr/td[2]/a",0);
+      echo    $html;
+      
+      $linksofpage = $element->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/div[1]/table/tbody/tr[3]/td/div/table/tbody/tr/td[2]/a",0);
           echo $linksofpage;
       }
 
