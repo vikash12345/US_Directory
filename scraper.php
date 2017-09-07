@@ -6,8 +6,8 @@ require 'scraperwiki/simple_html_dom.php';
 /*This loop is for number in page*/
 
 
-$alpha = array('a' , 'b');
-for($var = 1; $var<= sizeof($alpha); $var++) 
+$Alpha = array('a' , 'b');
+for($var = 1; $var<=  < sizeof($Alpha); $var++) 
 {
  echo $link = 'http://globalcontact.com/gc/directory/search.php?table=USDIR&company= . $alpha[$var] .&search=&search_sic=&page=1';
 }
