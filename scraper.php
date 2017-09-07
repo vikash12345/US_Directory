@@ -6,7 +6,7 @@ require 'scraperwiki/simple_html_dom.php';
 $alpha = array('a' , 'b');
 for($var = 1; $var<= 5; $var++) 
 {
-  echo $var;
+ echo $link = 'http://globalcontact.com/gc/directory/search.php?table=USDIR&company=a&search=&search_sic=&page=' .$var;
 }
 
 
