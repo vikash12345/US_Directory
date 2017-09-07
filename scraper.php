@@ -14,8 +14,8 @@ $input =  $html->find('input[type=text]', 0);
     echo  $input->innertext = 'foo';
           
      }
-echo "-----"
-echo $input
+echo "-----";
+echo $input;
      
     //code
 
