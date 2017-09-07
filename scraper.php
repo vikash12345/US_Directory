@@ -9,7 +9,7 @@ require 'scraperwiki/simple_html_dom.php';
 $alpha = array('a' , 'b');
 for($var = 1; $var<= sizeof($alpha); $var++) 
 {
- echo $link = 'http://globalcontact.com/gc/directory/search.php?table=USDIR&company=.$var.&search=&search_sic=&page=1';
+ echo $link = 'http://globalcontact.com/gc/directory/search.php?table=USDIR&company= . $alpha($var) .&search=&search_sic=&page=1';
 }
 
 
