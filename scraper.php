@@ -18,8 +18,7 @@ if($html)
      $lastpageno =  $html->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/center/div/a[11]", 0);
     if(is_object($lastpageno))
     {
-      $str = $lastpageno;
-echo $int = filter_var($str, FILTER_SANITIZE_NUMBER_INT);
+    echo $int = filter_var($lastpageno, FILTER_SANITIZE_NUMBER_INT);
 
       
         /*  $str = 'In My Cart : 11 12 items';
