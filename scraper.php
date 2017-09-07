@@ -9,6 +9,7 @@ $html 		= file_get_html($NewLink);
 
 $input =  $html->find('input[type=text]', 0);
 if($input->type==''||$input->type=='text'){
+    echo $input;
     //code
   }
 
