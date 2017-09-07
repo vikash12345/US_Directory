@@ -19,7 +19,7 @@ if($html)
     if(is_object($lastpageno))
     {
       
-      		echo		$checkloopnumberforpagintion	=	str_replace("<a href="search.php?table=USDIR&amp;company=", "", $lastpageno);
+      		echo		$checkloopnumberforpagintion	=	str_replace("<a href='search.php?table=USDIR&amp;company=", "", $lastpageno);
 
       
     }
