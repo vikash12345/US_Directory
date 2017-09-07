@@ -6,7 +6,13 @@ require 'scraperwiki/simple_html_dom.php';
 $Baselink = 'http://globalcontact.com/gc/directory/search.php?table=USDIR&company=a&search=&search_sic=&page=';
 for($var = 1; $var <= 4747; $var++){
 $NEWLINK =$Baselink . $var;
-  echo $NEWLINK;
+$html 		= file_get_html($NEWLINK);
+if($html)
+      {
+          foreach($html->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]")as $element);
+          $linksofpage = $element->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/div[1]/table/tbody/tr[3]/td/div/table/tbody/tr/td[2]/a",0);
+          echo $linksofpage;
+      }
 
 }
 
