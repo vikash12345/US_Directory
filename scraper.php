@@ -20,7 +20,11 @@ if($html)
     {
     $totalpageloop =  preg_replace("/[^0-9]/","",$lastpageno);
       echo $totalpageloop;
+      for($page = 0; $page <= $totalpageloop; $page++)
+      {
+      echo  $Baselink . $Alpha[$var] . '&search=&search_sic=&page=' .$page ;
       
+      }
       
       /*
     echo $int = filter_var($lastpageno, FILTER_SANITIZE_NUMBER_INT);
