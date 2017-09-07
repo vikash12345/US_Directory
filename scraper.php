@@ -8,10 +8,10 @@ $NewLink	=	'http://globalcontact.com/gc/directory/search.php?table=USDIR';
 $html 		= file_get_html($NewLink);
 $var = 'Hello';
 $input =  $html->find('input[type=text]', 0);
-if($input->type==''||$input->type=='text'){
+
      echo  $input->innertext = $input->innertext . $var;
     //code
-  }
+
 
 
 /*
