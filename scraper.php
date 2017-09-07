@@ -24,13 +24,14 @@ if($html)
       
       for($page = 0; $page <= 2; $page++)
       {
-      $mainpage = $Baselink . $Alpha[$var] . '&search=&search_sic=&page=' .$page ;
+      $mainpage = $Baselink . $Alpha[$var] . '&search=&search_sic=&page=' .$page;
         $link = = file_get_html($mainpage);
         if(is_object($link)){
         
-        foreach($link->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]") as $element){
+        foreach($link->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]") as $element)
+        {
         
-        $linkofprofile = $element->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/div[1]/table/tbody/tr[3]/td/div/table/tbody/tr/td[1]/a" 0)->href
+        $linkofprofile = $element->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/div[1]/table/tbody/tr[3]/td/div/table/tbody/tr/td[1]/a" 0)->href;
         
         echo $linkofprofile;
         }
