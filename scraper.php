@@ -19,9 +19,13 @@ if($html)
     if(is_object($lastpageno))
     {
       
-      		echo		$checkloopnumberforpagintion	=	str_replace("<a href='search.php?table=USDIR&amp;company=", "", $lastpageno);
+      //		echo		$checkloopnumberforpagintion	=	str_replace("<a href='search.php?table=USDIR&amp;company=", "", $lastpageno);
 
+    //  <a href="search.php?table=USDIR&amp;company=b&amp;search=&amp;search_sic=&amp;page=2917">Last»</a>
       
+      $str = 'In My Cart : 11 12 items';
+    preg_match_all('!\d+!', $str, $matches);
+      echo $matches;
     }
   }
  
