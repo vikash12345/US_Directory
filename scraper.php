@@ -19,7 +19,6 @@ if($html)
     if(is_object($lastpageno))
     {
     $totalpageloop =  preg_replace("/[^0-9]/","",$lastpageno);
-      echo $totalpageloop;
       for($page = 0; $page <= $totalpageloop; $page++)
       {
       echo  $Baselink . $Alpha[$var] . '&search=&search_sic=&page=' .$page ;
