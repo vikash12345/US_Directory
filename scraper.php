@@ -10,7 +10,7 @@ $NEWLINK =$Baselink . $var;
 $html 		= file_get_html($NEWLINK);
 if($html)
       {
-          foreach($html->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/div")as $element);
+          foreach($html->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/div[1]")as $element);
            echo $element;
       }
 
