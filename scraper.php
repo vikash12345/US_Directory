@@ -18,14 +18,20 @@ if($html)
      $lastpageno =  $html->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/center/div/a[11]", 0);
     if(is_object($lastpageno))
     {
+      $str = 'In My Cart : 11 items';
+echo $int = filter_var($str, FILTER_SANITIZE_NUMBER_INT);
+
+      
+        /*  $str = 'In My Cart : 11 12 items';
+    preg_match_all('!\d+!', $str, $matches);
+      echo $matches;
+      
       
       //		echo		$checkloopnumberforpagintion	=	str_replace("<a href='search.php?table=USDIR&amp;company=", "", $lastpageno);
 
     //  <a href="search.php?table=USDIR&amp;company=b&amp;search=&amp;search_sic=&amp;page=2917">Last»</a>
       
-      $str = 'In My Cart : 11 12 items';
-    preg_match_all('!\d+!', $str, $matches);
-      echo $matches;
+  
     }
   }
  
