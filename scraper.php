@@ -8,7 +8,7 @@ require 'scraperwiki/simple_html_dom.php';
 $NewLink	=	'http://globalcontact.com/gc/directory/search.php?table=USDIR';
 $html 		= file_get_html($NewLink);
 $var = 'Hello';
-echo $input =  $html->find('input[type=text]->value[a]', 0);
+$input =  $html->find('input[type=text]', 0);
 
      
     //code
