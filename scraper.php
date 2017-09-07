@@ -18,6 +18,11 @@ if($html)
      $lastpageno =  $html->find("/html/body/center/table/tbody/tr[2]/td[2]/div/div[2]/table/tbody/tr/td[2]/div/div[4]/center/div/a[11]", 0);
     if(is_object($lastpageno))
     {
+    $totalpageloop =  preg_replace("/[^0-9]/","",$lastpageno);
+      echo $totalpageloop;
+      
+      
+      /*
     echo $int = filter_var($lastpageno, FILTER_SANITIZE_NUMBER_INT);
 
       
