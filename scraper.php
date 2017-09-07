@@ -4,6 +4,16 @@
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 
+$string = "<div id='container'><div>im a text node</div><div>im another</div></div>";
+$html = str_get_html($string);
+foreach($html->find("text") as $ht) {
+   $ht->innertext .= "<span>end of each text node</span>";
+}
+$html->save();
+echo $html;   // echo modified html
+
+
+/*
 $NewLink	=	'http://globalcontact.com/gc/directory/search.php?table=USDIR';
 $html 		= file_get_html($NewLink);
 $var = 'Hello';
